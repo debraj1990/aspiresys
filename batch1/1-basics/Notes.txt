@@ -18,7 +18,6 @@ web-ui
 
  content  ==> HTML
  style    ==> CSS
-
  behavior ==> javascript
 
 ---------------------------------------------------------------------------------------
@@ -40,6 +39,7 @@ implemented nativly by browser vendors & abstracted as JavaScript objects & func
 
 browser-APIs  :
     ==> DOM, XHR,Timer,....
+
 
 using DOM API
 --------------
@@ -66,8 +66,6 @@ HTML5 APIs
  
 
  ------------------------------------------------------------------
-
-
 
 
 
@@ -99,7 +97,6 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
             i.e JSP, ASP, PHP , freemarker, Rails,..,...,....
 
-
     Problems:
 
     => on every request, server-side-programs  
@@ -125,12 +122,9 @@ problems/limitations with plain-js ( your-code ) with browser-apis
            -> browser also following standards in uniform way..
 
         +
-    
 
         ==> using third-party's .js Lib & Frameworks       
     
-
-
 
 
         Utility lib
@@ -144,7 +138,6 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
         MVC / MVVM pattern based lib & frameworks
         ---------------------------------------
-
 
 
         1. DOJO
@@ -190,10 +183,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
         ......
 
-        ------------------------------------------------------
-
-
-
+       ------------------------------------------------------
        web component   a.k.a component based architecture
        --------------------------------------------------------
 
@@ -330,7 +320,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
 
         to create this kind custom components,
-        we use web-coponent spec APIs ( draft ) or  React.js. Angular.js,....
+        we use w3c's web-coponent spec APIs ( draft ) or  React.js, Angular.js,....
 
 
 
@@ -343,6 +333,47 @@ summary
 
 
 ---------------------------------------------------------------------------
+
+
+Languages
+----------------
+
+ - JavaScript
+ - TypeScript
+
+
+
+---------------------------------------------------------------------------
+
+
+
+ Tools
+ --------
+
+        -  NPM 
+
+              => package manager
+
+              why we need ?
+
+              - to publish/install javascript packages from NPM repository  
+              - to manage application build cycle
+
+        - webpack
+
+               => Modules bundler & loader
+
+
+               why we need ?
+
+                => compile/transpile javascript/TypeScript  code
+                => bundling
+
+-----------------------------------------------------------------------------
+
+
+
+
 
 
 

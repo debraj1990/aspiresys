@@ -1,0 +1,45 @@
+
+
+ A.data-binding
+ --------------
+
+
+    4 ways
+    ---------
+
+    1. interpolation
+
+
+        syntax:
+
+            in template :
+
+                {{data-binding-expression}}
+
+
+B. directives
+--------------------
+
+
+   ==> intructions to render UI
+
+
+   3 types
+   ---------
+
+    1. component    ( directive + template )
+
+            ==> alwyas bring New UI fragment to page
+
+    2. structural
+
+            ==> to modify existing component template     
+
+            syntax:
+
+                *directiveName
+
+                e.g
+
+                    <div *ngFor></div>   
+                    <button *ngIf></button>

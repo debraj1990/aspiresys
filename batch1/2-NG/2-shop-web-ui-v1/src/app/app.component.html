@@ -1,0 +1,14 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <hr />
+    <hr />
+
+    <div *ngFor="let product of products;let idx=index" class="list-group-item">
+        <span class="badge badge-dark">{{idx+1}}</span>
+        <h5>{{product.name}}</h5>
+        <h6>{{product.price}}</h6>
+        <p>{{product.description}}</p>
+        <button *ngIf="product.canBuy" class="btn btn-primary btn-sm">buy</button>
+    </div>
+
+</div>
