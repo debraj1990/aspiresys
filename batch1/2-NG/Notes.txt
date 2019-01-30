@@ -7,14 +7,26 @@
     4 ways
     ---------
 
-    1. interpolation
-
-
+    1. Interpolation
+       
         syntax:
-
             in template :
 
                 {{data-binding-expression}}
+
+    2. Property binding
+
+        syntax:
+
+        <component [propName]="expression"/>     
+
+    3. Event binding     
+
+        syntax:
+
+        <component (event-name)="handler($event)"/>    
+
+
 
 
 B. directives
@@ -43,3 +55,47 @@ B. directives
 
                     <div *ngFor></div>   
                     <button *ngIf></button>
+
+    3. attribute                 
+
+            ==> to change element attributes
+
+            e.g
+
+                ngClass
+
+
+
+C. Form Management
+----------------------       
+
+
+    how to manage forms in NG ?
+
+    2 ways
+
+    way-1 : Template-Driven Forms  
+
+            -> similar to angular-1 f.w
+            -> good for simple-forms
+
+            complexities
+            ---------------
+
+            -> very difficult to write complex form management logic at template
+
+
+    way-2 : Reactive Forms
+
+            - best for simple & complex forms
+    
+
+
+    steps to use 'reactive form module'
+    ----------------------------------
+
+
+    step-1: import 'ReactiveFormModule' to your module.
+            
+    step-2: create 'form-group' with 'form-controls'         
+

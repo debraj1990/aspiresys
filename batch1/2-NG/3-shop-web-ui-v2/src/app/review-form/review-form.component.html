@@ -1,0 +1,46 @@
+<button *ngIf="!isOpen" class="btn btn-sm btn-info" (click)="toggleForm()"><i class="fa fa-plus"></i></button>
+<div class="row" *ngIf="isOpen">
+  <div class="col-sm-11 col-md-7">
+    <div class="card card-default">
+      <div class="card-header">Review Form</div>
+      <div class="card-body">
+        <form [formGroup]="reviewForm">
+          <div class="form-group">
+            <label>stars</label>
+            <select class="form-control" formControlName="stars">
+              <option *ngFor="let n of [1,2,3,4,5]" [value]="n">{{n}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>author</label>
+            <input class="form-control" type="email" formControlName="author" />
+          </div>
+          <div class="form-group">
+            <label>body</label>
+            <textarea class="form-control" formControlName="body"></textarea>
+          </div>
+          <button class="btn btn-dark btn-sm">submit</button>
+          &nbsp;
+          <button type="button" (click)="toggleForm()" class="btn btn-danger btn-sm">cancel</button>
+        </form>
+
+        <hr />
+        <pre>
+          is pristine : {{reviewForm.pristine}}
+          is dirty    : {{reviewForm.dirty}}
+
+          is invalid  : {{reviewForm.invalid}}
+          is valid    : {{reviewForm.valid}}
+
+          isUntouched : {{reviewForm.untouched}}
+          istouched   : {{reviewForm.touched}}
+        </pre>
+        <pre>
+          {{reviewForm.value|json}}
+        </pre>
+        <hr />
+
+      </div>
+    </div>
+  </div>
+</div>

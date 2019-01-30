@@ -26,14 +26,5 @@ export class AppComponent {
     }
   ]
 
-  currentTab: number = 1;
-
-  changeTab(newTabIndex) {
-    this.currentTab = newTabIndex;
-  }
-  isTabSelected(tabIndex) {
-    return this.currentTab === tabIndex;
-  }
-
 
 }
