@@ -1,0 +1,31 @@
+<div class="container">
+
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" href="#">online-shopping</a>
+    </nav>
+
+    <hr />
+    <i class="fa fa-shopping-cart"></i> &nbsp;
+    <span class="badge badge-dark">{{cart.length}}</span> item(s) in cart
+    <hr />
+
+    <hr />
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['products']">products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['cart']">cart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['orders']">orders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['login']">sign-in</a>
+        </li>
+    </ul>
+    <hr />
+
+    <router-outlet></router-outlet>
+
+</div>

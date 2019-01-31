@@ -21,7 +21,7 @@ export class ProductComponent implements OnInit {
   addNewReview(newReview) {
     this.reviews.push(newReview);
   }
-
+ 
   constructor() { }
 
   ngOnInit() {

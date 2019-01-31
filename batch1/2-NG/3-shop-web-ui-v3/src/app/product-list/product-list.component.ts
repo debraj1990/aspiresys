@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-product-list',
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.scss']
 })
-export class AppComponent {
+export class ProductListComponent implements OnInit {
 
-  isCartOpen: boolean = false;
-
-  cart: Array<any> = [];
 
   products: Array<any> = [
     {
@@ -30,12 +27,10 @@ export class AppComponent {
     }
   ]
 
-  addToCart(item) {
-    this.cart.push(item);
-  }
-  toggleCart() {
-    this.isCartOpen = !this.isCartOpen;
-  }
 
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

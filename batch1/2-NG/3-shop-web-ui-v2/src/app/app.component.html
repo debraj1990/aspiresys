@@ -5,10 +5,21 @@
     </nav>
 
     <hr />
+    <i class="fa fa-shopping-cart"></i> &nbsp;
+    <span class="badge badge-dark">{{cart.length}}</span> item(s) in cart
     <hr />
 
-    <div *ngFor="let product of products;let idx=index" class="list-group-item">
-        <app-product [value]="product"></app-product>
+    <hr />
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a (click)="toggleCart()" class="nav-link" href="#">{{isCartOpen?'View products':'View cart'}}</a>
+        </li>
+    </ul>
+    <hr />
+    <app-view-cart *ngIf="isCartOpen" [cart]="cart"></app-view-cart>
+    <div *ngIf="!isCartOpen">
+        <div *ngFor="let product of products;let idx=index" class="list-group-item">
+            <app-product [value]="product" (buy)="addToCart($event)"></app-product>
+        </div>
     </div>
-
 </div>

@@ -11,25 +11,6 @@ export class AppComponent {
 
   cart: Array<any> = [];
 
-  products: Array<any> = [
-    {
-      id: 1,
-      name: 'Laptop',
-      price: 198000,
-      description: 'New Mac pro',
-      imagePath: 'images/Laptop.png',
-      canBuy: true
-    },
-    {
-      id: 2,
-      name: 'Mobile',
-      price: 18000,
-      description: 'New  pro',
-      imagePath: 'images/Mobile.png',
-      canBuy: true
-    }
-  ]
-
   addToCart(item) {
     this.cart.push(item);
   }
@@ -37,5 +18,5 @@ export class AppComponent {
     this.isCartOpen = !this.isCartOpen;
   }
 
-
+ 
 }

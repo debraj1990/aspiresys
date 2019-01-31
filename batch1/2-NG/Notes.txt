@@ -97,5 +97,7 @@ C. Form Management
 
     step-1: import 'ReactiveFormModule' to your module.
             
-    step-2: create 'form-group' with 'form-controls'         
+    step-2: create 'form-group' with 'form-controls' 
+
+    step-3: bind form-group & form controls with template        
 
