@@ -1,0 +1,27 @@
+<div class="container">
+
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" href="#">online-shopping</a>
+    </nav>
+
+    <hr />
+    <app-cart-badge></app-cart-badge>
+    <hr />
+
+    <hr />
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['products']">view-products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['cart']">view-cart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['orders']">view-orders</a>
+        </li>
+    </ul>
+    <hr />
+
+    <router-outlet></router-outlet>
+
+</div>
